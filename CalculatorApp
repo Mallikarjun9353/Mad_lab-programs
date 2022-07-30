@@ -1,0 +1,418 @@
+//   MainActivity.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIMPLE CALCULATOR"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULT:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <Button
+        android:id="@+id/btn_div"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:text="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:text="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_mul"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:text="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/btn_6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:text="7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <Button
+        android:id="@+id/btn_9"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:text="9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/btn_9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <Button
+        android:id="@+id/btn_dot"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <Button
+        android:id="@+id/btn_eq"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_dot"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/btn_eq"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <Button
+        android:id="@+id/btn_cl"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:text="C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+//  MainActivity.java
+
+
+package com.example.calculator;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.regex.Pattern;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    Button btnone,btntwo,btnthree,btnfour,btnfive,btnsix,btnseven,btneight,btnnine,btnzero;
+    Button btnmul,btndiv,btnsub,btnadd,btndot,btneq,btncl;
+    EditText Text;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        btnone=(Button) findViewById(R.id.btn_1);
+        btnone.setOnClickListener(this);
+
+        btntwo=(Button) findViewById(R.id.btn_2);
+        btntwo.setOnClickListener(this);
+
+        btnthree=(Button) findViewById(R.id.btn_3);
+        btnthree.setOnClickListener(this);
+
+        btnfour=(Button) findViewById(R.id.btn_4);
+        btnfour.setOnClickListener(this);
+
+        btnfive=(Button) findViewById(R.id.btn_5);
+        btnfive.setOnClickListener(this);
+
+        btnsix=(Button) findViewById(R.id.btn_6);
+        btnsix.setOnClickListener(this);
+
+        btnseven=(Button) findViewById(R.id.btn_7);
+        btnseven.setOnClickListener(this);
+
+        btneight=(Button) findViewById(R.id.btn_8);
+        btneight.setOnClickListener(this);
+
+        btnnine=(Button) findViewById(R.id.btn_9);
+        btnnine.setOnClickListener(this);
+
+        btnzero=(Button) findViewById(R.id.btn_0);
+        btnzero.setOnClickListener(this);
+
+        btndiv=(Button) findViewById(R.id.btn_div);
+        btndiv.setOnClickListener(this);
+
+        btnmul=(Button) findViewById(R.id.btn_mul);
+        btnmul.setOnClickListener(this);
+
+        btnsub=(Button) findViewById(R.id.btn_sub);
+        btnsub.setOnClickListener(this);
+
+        btnadd=(Button) findViewById(R.id.btn_add);
+        btnadd.setOnClickListener(this);
+
+        btndot=(Button) findViewById(R.id.btn_dot);
+        btndot.setOnClickListener(this);
+
+        btneq=(Button) findViewById(R.id.btn_eq);
+        btneq.setOnClickListener(this);
+
+        btncl=(Button) findViewById(R.id.btn_cl);
+        btncl.setOnClickListener(this);
+
+        Text=(EditText) findViewById(R.id.res);
+        Text.setText("");
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.equals(btnone))
+            Text.append("1");
+        else if(v.equals(btntwo))
+            Text.append("2");
+        else if(v.equals(btnthree))
+            Text.append("3");
+        else if(v.equals(btnfour))
+            Text.append("4");
+        else if(v.equals(btnfive))
+            Text.append("5");
+        else if(v.equals(btnsix))
+            Text.append("6");
+        else if(v.equals(btnseven))
+            Text.append("7");
+        else if(v.equals(btneight))
+            Text.append("8");
+        else if(v.equals(btnnine))
+            Text.append("9");
+        else if(v.equals(btnzero))
+            Text.append("0");
+        else if(v.equals(btnadd))
+            Text.append("+");
+        else if(v.equals(btnsub))
+            Text.append("-");
+        else if(v.equals(btnmul))
+            Text.append("*");
+        else if(v.equals(btndiv))
+            Text.append("/");
+        else if(v.equals(btndot))
+            Text.append(".");
+        else if(v.equals(btncl))
+            Text.setText("");
+        else if(v.equals(btneq))
+            try{
+                String data=Text.getText().toString();
+                if(data.contains("+"))
+                    add(data);
+                else if(data.contains("-"))
+                    sub(data);
+                else if(data.contains("*"))
+                    mul(data);
+                else if(data.contains("/"))
+                    div(data);
+
+            }catch(Exception e){
+                display("invalid Input");
+            }
+
+    }
+
+    private void add(String data) {
+        String[] op=data.split(Pattern.quote("+"));
+        if(op.length==2){
+            double op1=Double.parseDouble(op[0]);
+            double op2=Double.parseDouble(op[1]);
+            double res1=op1+op2;
+            Text.setText(String.valueOf(res1));
+        }else
+            display("invalid");
+    }
+    private void sub(String data) {
+        String[] op=data.split("-");
+        if(op.length==2){
+            double op1=Double.parseDouble(op[0]);
+            double op2=Double.parseDouble(op[1]);
+            double res1=op1-op2;
+            Text.setText(String.valueOf(res1));
+        }else
+            display("invalid");
+    }
+    private void mul(String data) {
+        String[] op=data.split(Pattern.quote("*"));
+        if(op.length==2){
+            double op1=Double.parseDouble(op[0]);
+            double op2=Double.parseDouble(op[1]);
+            double res1=op1*op2;
+            Text.setText(String.valueOf(res1));
+        }else
+            display("invalid");
+    }
+    private void div(String data) {
+        String[] op=data.split(Pattern.quote("/"));
+        if(op.length==2){
+            double op1=Double.parseDouble(op[0]);
+            double op2=Double.parseDouble(op[1]);
+            double res1=op1/op2;
+            Text.setText(String.valueOf(res1));
+        }else
+            display("invalid");
+    }
+    private void display(String msg) {
+        Toast.makeText(getBaseContext(),msg,Toast.LENGTH_LONG).show();
+    }
+}
